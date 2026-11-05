@@ -1,5 +1,7 @@
 # hiresight: never commit data or secrets
-data/
+data/*
+!data/call_log.jsonl
+outputs/*.csv
 *.db
 *.sqlite
 .DS_Store
