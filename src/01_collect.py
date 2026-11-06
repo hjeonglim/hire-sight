@@ -36,7 +36,7 @@ API_KEY = os.environ["THEIR_STACK_API"]
 url = "https://api.theirstack.com/v1/jobs/search"
 H = {"Authorization": f"Bearer {API_KEY}"}
 
-for label, gte, lte in month_ranges((2026, 3), (2026, 10)):
+for label, gte, lte in month_ranges((2025, 11), (2026, 10)):
     body = {
     "company_id_or": [COMPANIES[company]["id"]],
     "job_country_code_or": ["US"],
@@ -52,9 +52,10 @@ for label, gte, lte in month_ranges((2026, 3), (2026, 10)):
     data, status, latency = search(body)
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    os.makedirs(f"data/raw/{company.lower()}", exist_ok=True)
+    output_path = f"data/raw/{company.lower()}/jobs"
+    os.makedirs(output_path, exist_ok=True)
  
-    with open(f"data/raw/{company.lower()}/{stamp}_{company.lower()}_{mode}_{label}_p{body["page"]}.json", "w") as f_out:
+    with open(f"{output_path}/{stamp}_{company.lower()}_{mode}_{label}_p{body["page"]}.json", "w") as f_out:
         json.dump(data, f_out, indent=2)
 
     # Record balance AFTER the call
