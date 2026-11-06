@@ -34,3 +34,20 @@ Decision (keep or change filter, why): Keep core filter v1. Precision 20/20 (bro
 | 2a  | Core filter (v1) | 2     |        |
 
 **Caveat:** This study only covers US. Samsung and SK Hynix hiring is not covered by TheirStack; US counts reflect US subsidiaries only.
+
+### Micron: 10/01/2025 - 10/30/2026 Monthly
+
+| Month   | All | HBM (core) | HBM share |
+| ------- | --- | ---------- | --------- |
+| 2025-11 | 181 | 20         | 11.0%     |
+| 2025-12 | 277 | 17         | 6.1%      |
+| 2026-01 | 385 | 29         | 7.5%      |
+| 2026-02 | 321 | 32         | 10.0%     |
+| 2026-03 | 510 | 73         | 14.3%     |
+| 2026-04 | 441 | 77         | 17.5%     |
+| 2026-05 | 417 | 59         | 14.1%     |
+| 2026-06 | 362 | 49         | 13.5%     |
+| 2026-07 | 430 | 59         | 13.7%     |
+| 2026-08 | 669 | 99         | 14.8%     |
+| 2026-09 | 707 | 125        | 17.7%     |
+| 2026-10 | 739 | 113        | 15.3%     |
